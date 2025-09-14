@@ -43,7 +43,10 @@ signInAnonymously(auth)
         li.textContent = texto + " ";
 
         const botao = document.createElement("button");
-
+        botao.style.width = '180px';
+        botao.style.height = "60px";
+        botao.style.fontSize = "30px"
+        
         if (produto.reservado) {
           if (produto.reservadoPor == nomeUsuario) {
             // 🔹 só quem reservou vê o botão de desreservar
