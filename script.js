@@ -34,7 +34,7 @@ signInAnonymously(auth)
       snapshot.forEach((docSnap) => {
         const produto = docSnap.data();
         const li = document.createElement("li");
-        li.style.fontSize = "10vw"
+        li.style.fontSize = "6vw"
 
         let texto = produto.nome;
         if (produto.reservado && produto.reservadoPor) {
