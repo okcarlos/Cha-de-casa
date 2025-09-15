@@ -46,12 +46,15 @@ signInAnonymously(auth)
         const botao = document.createElement("button");
         botao.style.width = '180px';
         botao.style.height = "60px";
-        botao.style.fontSize = "25px"
+        botao.style.fontSize = "25px";
+        botao.style.borderRadius = "15px";
+        botao.style.backgroundColor = "#ceffb2";
         
         if (produto.reservado) {
           if (produto.reservadoPor == nomeUsuario) {
             // 🔹 só quem reservou vê o botão de desreservar
             botao.textContent = "Tirar reserva";
+            botao.style.backgroundColor = "#ffbbbb"
             botao.onclick = async () => {
               await updateDoc(doc(db, "produtos", docSnap.id), { 
                 reservado: false,
@@ -61,6 +64,7 @@ signInAnonymously(auth)
           } else {
             // 🔹 outros usuários só veem que está indisponível
             botao.textContent = "Indisponível";
+            botao.style.backgroundColor = "#ffbbbb"
             botao.disabled = true;
           }
         } else {
