@@ -34,6 +34,7 @@ signInAnonymously(auth)
       snapshot.forEach((docSnap) => {
         const produto = docSnap.data();
         const li = document.createElement("li");
+        li.id = "li"
         li.style.fontSize = "45px"
         li.style.marginBottom = "15px"
 
@@ -44,6 +45,7 @@ signInAnonymously(auth)
         li.textContent = texto + " ";
 
         const botao = document.createElement("button");
+        botao.class = "botao"
         botao.style.width = '180px';
         botao.style.height = "60px";
         botao.style.fontSize = "25px";
