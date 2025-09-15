@@ -45,7 +45,7 @@ signInAnonymously(auth)
         const botao = document.createElement("button");
         botao.style.width = '180px';
         botao.style.height = "60px";
-        botao.style.fontSize = "30px"
+        botao.style.fontSize = "25px"
         
         if (produto.reservado) {
           if (produto.reservadoPor == nomeUsuario) {
