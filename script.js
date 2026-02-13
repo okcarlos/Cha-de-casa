@@ -77,8 +77,8 @@ const lista = document.getElementById("lista");
     confirmar.style.borderRadius = "15px"
     confirmar.style.textAlign = "center"
     confirmar.style.fontSize = "25px"
-    confirmar.style.width = "130px"
-    confirmar.style.height = "50px"
+    confirmar.style.width = "40%"
+    confirmar.style.height = "20%"
     confirmar.onclick = () =>{
       nomeUsuario = input.value.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       tutorial.remove()
