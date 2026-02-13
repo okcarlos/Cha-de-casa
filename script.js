@@ -40,25 +40,25 @@ const lista = document.getElementById("lista");
     overlay.style.zIndex = "9980";
     
     
-    let tutorial = document.createElement("div")
-    tutorial.innerHTML = "digite seu nome: "
-    tutorial.style.backgroundColor = "white"
-    tutorial.style.position = "fixed"
-    tutorial.style.top = "50%"
-    tutorial.style.left = "50%"
-    tutorial.style.borderRadius = "15px"
-    tutorial.style.textAlign = "left"
-    tutorial.style.fontSize = "50px"
-    tutorial.style.transform = "translate(-50%, -50%)"
-    tutorial.style.width = "30%"
-    tutorial.style.height = "40%"
-    tutorial.style.zIndex = "9990"
-    tutorial.style.textAlign = "center"
-    tutorial.style.display = "flex"
-    tutorial.style.flexDirection = "column"
-    tutorial.style.justifyContent = "center"
-    tutorial.style.alignItems = "center"
-    tutorial.style.gap = "20px"
+    let nome = document.createElement("div")
+    nome.innerHTML = "digite seu nome: "
+    nome.style.backgroundColor = "white"
+    nome.style.position = "fixed"
+    nome.style.top = "50%"
+    nome.style.left = "50%"
+    nome.style.borderRadius = "15px"
+    nome.style.textAlign = "left"
+    nome.style.fontSize = "50px"
+    nome.style.transform = "translate(-50%, -50%)"
+    nome.style.width = "30%"
+    nome.style.height = "40%"
+    nome.style.zIndex = "9990"
+    nome.style.textAlign = "center"
+    nome.style.display = "flex"
+    nome.style.flexDirection = "column"
+    nome.style.justifyContent = "center"
+    nome.style.alignItems = "center"
+    nome.style.gap = "20px"
     
     let input = document.createElement("input")
     input.innerHTML = "Confirmar"
@@ -81,14 +81,14 @@ const lista = document.getElementById("lista");
     confirmar.style.height = "20%"
     confirmar.onclick = () =>{
       nomeUsuario = input.value.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-      tutorial.remove()
+      nome.remove()
       overlay.remove()
       console.log(input)
     }
     document.body.appendChild(overlay)
-    overlay.appendChild(tutorial)
-    tutorial.appendChild(input)
-    tutorial.appendChild(confirmar)
+    overlay.appendChild(nome)
+    nome.appendChild(input)
+    nome.appendChild(confirmar)
     
    { 
     //janela de fundo
