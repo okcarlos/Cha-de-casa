@@ -125,7 +125,7 @@ const lista = document.getElementById("lista");
     botao.style.textAlign = "center"
     botao.style.fontSize = "25px"
     botao.style.width = "140px"
-    botao.style.height = "30px"
+    botao.style.height = "35px"
     botao.onclick = () =>{
       tutorial.remove()
     }
